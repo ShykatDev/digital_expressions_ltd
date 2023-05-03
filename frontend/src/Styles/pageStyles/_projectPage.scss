@@ -1,0 +1,658 @@
+.projectPage {
+  width: 100%;
+  height: auto;
+  margin-top: 10vh;
+
+  .section-intro {
+    padding: 5rem 10rem;
+    width: 100%;
+    height: 65vh;
+    @include flexStyles(center, center);
+    position: relative;
+
+    .info-sec {
+      width: 30%;
+      height: auto;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+
+      h1 {
+        font-size: 5.2rem;
+        color: $textPrimary;
+        font-family: $montserrat;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        text-align: center;
+        span {
+          border-bottom: 1px solid $textPrimary;
+        }
+        opacity: 0;
+      }
+
+      p {
+        font-family: $openSans;
+        color: $textTernary;
+        font-weight: 300;
+        margin-bottom: 3rem;
+        opacity: 0;
+        text-align: center;
+      }
+
+      .section-title {
+        width: 100%;
+        height: auto;
+        background: $highlight;
+        text-align: center;
+        @include flexStyles(center, center);
+        border-radius: 0.6rem;
+        opacity: 0;
+
+        h2 {
+          font-size: 3.5rem;
+          padding: 1rem 0rem;
+          font-family: $montserrat;
+          font-weight: 600;
+          @include flexStyles(space-between, center);
+
+          .ico {
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+    .banner-sec {
+      width: 85%;
+      height: 60vh;
+      overflow: hidden;
+      border-radius: 1rem;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#1b1b1b56, #1b1b1b 89%);
+      }
+    }
+  }
+
+  .project-map {
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    width: 100%;
+    height: 80vh;
+    padding: 5rem 0rem;
+    transform: rotate(-6deg) scale(1.08);
+
+    @include flexStyles(space-between, center);
+    .leftPage {
+      width: 44%;
+      height: 100%;
+      background: $highlight;
+      border-radius: 0.6rem;
+      position: relative;
+      padding: 3rem 5rem;
+
+      .right-rings {
+        @include right-rings;
+      }
+
+      h2 {
+        color: $textPrimary;
+        font-family: $montserrat;
+      }
+
+      .demo {
+        width: 100%;
+        height: 75%;
+        background: rgba(0, 0, 0, 0.132);
+        margin-top: 1.7rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+
+        .topBox {
+          width: 100%;
+          height: 60%;
+          background: #0000004b;
+          @include flexStyles(center, center);
+          flex-direction: column;
+
+          .line1,
+          .line2 {
+            width: 13vw;
+            height: 2.5vh;
+            background: #00000021;
+            border-radius: 0.3rem;
+            margin: 0.3rem 0;
+          }
+
+          .line2 {
+            width: 10vw;
+          }
+        }
+
+        .bottomBox {
+          width: 100%;
+          height: 40%;
+          @include flexStyles(space-between, center);
+          padding: 2rem 3rem;
+          position: relative;
+
+          .circle {
+            width: 3.6vw;
+            height: 7vh;
+            border-radius: 50%;
+            background: #00000021;
+          }
+
+          .line1,
+          .line2 {
+            width: 13vw;
+            height: 2.5vh;
+            background: #00000021;
+            border-radius: 0.3rem;
+            position: absolute;
+          }
+
+          .line1 {
+            right: 4rem;
+            top: 1.3rem;
+          }
+          .line2 {
+            right: 3rem;
+            bottom: 1.3rem;
+          }
+        }
+      }
+    }
+
+    .middlePage {
+      width: 24%;
+      height: 100%;
+      background: $textPrimary;
+      border-radius: 0.6rem;
+      position: relative;
+      padding: 3rem;
+
+      .left-rings {
+        @include left-rings(6%);
+      }
+      .right-rings {
+        @include right-rings;
+      }
+
+      h2 {
+        color: $background;
+        font-family: $montserrat;
+      }
+
+      .box {
+        margin-top: 3rem;
+        width: 100%;
+        height: 7rem;
+        background: #e1755a4f;
+        border-radius: 0.4rem;
+      }
+
+      .line1,
+      .line2,
+      .line3 {
+        width: 90%;
+        height: 1.3rem;
+        background: rgba(5, 5, 5, 0.146);
+        margin: 0.8rem 0;
+        border-radius: 0.3rem;
+      }
+
+      .line1 {
+        margin-top: 2rem;
+      }
+
+      .line2 {
+        width: 90%;
+      }
+
+      .line3 {
+        width: 75%;
+        background: rgba(5, 5, 5, 0.272);
+      }
+    }
+    .rightPage {
+      width: 29%;
+      height: 100%;
+      background: $textSecondary;
+      border-radius: 0.6rem;
+      position: relative;
+      padding: 3rem 4rem;
+
+      .left-rings {
+        @include left-rings(7%);
+      }
+
+      h2 {
+        color: $textTernary;
+        font-family: $montserrat;
+      }
+
+      .sec {
+        width: 100%;
+        height: auto;
+        @include flexStyles(space-between, center);
+        margin: 2rem 0;
+
+        .lines {
+          width: 30%;
+          height: 100%;
+          @include flexStyles(space-between, center);
+          flex-direction: column;
+
+          .line {
+            width: 78%;
+            height: 1rem;
+            background: rgba(0, 0, 0, 0.189);
+            margin: 0.2rem 0;
+            border-radius: 0.1rem;
+          }
+        }
+        .box {
+          width: 38%;
+          height: 10vh;
+          background: rgba(24, 24, 24, 0.347);
+          border-radius: 0.3rem;
+        }
+        .lines2 {
+          width: 30%;
+          height: auto;
+          @include flexStyles(space-between, center);
+          flex-direction: column;
+
+          .line {
+            width: 78%;
+            height: 0.8rem;
+            background: rgba(0, 0, 0, 0.094);
+            margin: 0.2rem 0;
+            border-radius: 0.1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .running-project {
+    width: 100%;
+    height: auto;
+    padding: 5rem 10rem;
+
+    .titleBar {
+      width: 100%;
+      height: 5rem;
+
+      @include flexStyles(flex-start, center);
+
+      .folderIco {
+        color: $textTernary;
+        font-size: 2rem;
+      }
+
+      h3 {
+        color: $textTernary;
+        font-weight: 300;
+        font-family: $openSans;
+        font-size: 1.4rem;
+        margin-left: 1rem;
+      }
+    }
+
+    .onGoingProject {
+      width: 100%;
+      height: auto;
+      background: $dimlight;
+      padding: 5rem 5rem;
+      border-radius: 1rem;
+
+      .first {
+        width: 100%;
+        height: auto;
+        @include flexStyles(space-between, center);
+
+        h2 {
+          font-size: 2rem;
+          color: $textPrimary;
+          font-family: $openSans;
+          font-weight: 400;
+        }
+        p {
+          margin-top: 1rem;
+          width: 70%;
+          color: $textTernary;
+          font-family: $openSans;
+          font-weight: 300;
+        }
+
+        img {
+          width: 7%;
+        }
+      }
+
+      .project-img {
+        width: 100%;
+        height: 40vh;
+        border-radius: 0.7rem;
+        overflow: hidden;
+        margin: 3rem 0;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      small {
+        color: $highlight;
+        font-family: $openSans;
+      }
+
+      p {
+        font-family: $openSans;
+        margin-top: 1rem;
+        color: $textTernary;
+        font-weight: 300;
+      }
+
+      .third {
+        width: 100%;
+        height: auto;
+        @include flexStyles(space-between, center);
+        margin-top: 3rem;
+
+        .keyPoint-img {
+          width: 40%;
+          height: 40vh;
+          border-radius: 0.7rem;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(0.8);
+          }
+        }
+
+        ul {
+          width: 50%;
+          height: auto;
+          font-family: $openSans;
+          h2 {
+            color: $highlight;
+            font-weight: 400;
+            text-decoration: underline;
+            margin-bottom: 2rem;
+          }
+
+          li {
+            list-style: none;
+            font-weight: 300;
+            margin: 0.4rem 0;
+            color: $textTernary;
+            padding: 0.5rem 1rem;
+            border-radius: 0.3rem;
+          }
+
+          li:nth-child(odd) {
+            background: $background;
+          }
+        }
+      }
+    }
+  }
+
+  .featured-project {
+    width: 100%;
+    height: auto;
+    padding: 5rem 10rem;
+
+    .titleBar {
+      width: 100%;
+      height: 5rem;
+
+      @include flexStyles(flex-start, center);
+
+      .folderIco {
+        color: $textTernary;
+        font-size: 2rem;
+      }
+
+      h3 {
+        color: $textTernary;
+        font-weight: 300;
+        font-family: $openSans;
+        font-size: 1.4rem;
+        margin-left: 1rem;
+      }
+    }
+
+    .featured {
+      width: 100%;
+      height: auto;
+
+      .ft-img {
+        width: 100%;
+        height: 45vh;
+        overflow: hidden;
+        border-radius: 0.8rem;
+        object-fit: cover;
+      }
+
+      .first {
+        margin: 2rem 0;
+        width: 100%;
+        height: auto;
+        @include flexStyles(space-between, center);
+
+        div {
+          font-family: $openSans;
+          h1 {
+            font-weight: 600;
+            font-size: 2rem;
+            color: $textPrimary;
+          }
+          small {
+            color: $highlight;
+          }
+        }
+        img {
+          width: 7%;
+        }
+      }
+
+      p {
+        font-family: $openSans;
+        color: $textTernary;
+        font-weight: 300;
+        margin-bottom: 3rem;
+      }
+
+      .objectives {
+        width: 100%;
+        height: 20rem;
+        padding: 5rem 12rem 0 12rem;
+        @include flexStyles(space-between, flex-start);
+
+        .obj {
+          width: 20%;
+          height: auto;
+          @include flexStyles(center, center);
+          flex-direction: column;
+
+          h3 {
+            margin-top: 0.3rem;
+            margin-bottom: 0.4rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+            font-family: $openSans;
+          }
+
+          small {
+            color: $textTernary;
+            // width: 50%;
+            text-align: center;
+          }
+        }
+
+        .obj:nth-child(1) {
+          h3 {
+            color: $highlight;
+          }
+        }
+        .obj:nth-child(2) {
+          h3 {
+            color: #f93082;
+          }
+        }
+        .obj:nth-child(3) {
+          h3 {
+            color: #66a1d3;
+          }
+        }
+        .obj:nth-child(4) {
+          h3 {
+            color: #00699e;
+          }
+        }
+        .obj:nth-child(5) {
+          h3 {
+            color: $hoverHighlight;
+          }
+        }
+      }
+    }
+  }
+
+  .all-projects {
+    width: 100%;
+    height: auto;
+    padding: 5rem 10rem;
+
+    .titleBar {
+      width: 100%;
+      height: 5rem;
+
+      @include flexStyles(flex-start, center);
+
+      .folderIco {
+        color: $textTernary;
+        font-size: 2rem;
+      }
+
+      h3 {
+        color: $textTernary;
+        font-weight: 300;
+        font-family: $openSans;
+        font-size: 1.4rem;
+        margin-left: 1rem;
+      }
+    }
+
+    .singleProjects {
+      width: 100%;
+      height: auto;
+
+      .single-project {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 5rem;
+        @include flexStyles(flex-end, center);
+
+        .title {
+          width: 50%;
+          height: 100%;
+          position: absolute;
+          top: 40%;
+          left: 0;
+          h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            font-family: $openSans;
+            color: $highlight;
+          }
+          small {
+            font-family: $openSans;
+            color: $textPrimary;
+          }
+        }
+
+        .banner {
+          width: 40%;
+          height: 100%;
+          margin-right: 2rem;
+          position: relative;
+          z-index: -1;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.4rem;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to right, #1b1b1bd8, #000000a2);
+            border-radius: 0.4rem;
+          }
+        }
+
+        .details {
+          width: 30%;
+          height: 100%;
+          @include flexStyles(space-evenly, flex-start);
+          flex-direction: column;
+
+          p {
+            font-family: $openSans;
+            color: $textTernary;
+            font-weight: 300;
+            z-index: 1;
+          }
+
+          .objectiveMark {
+            width: 80%;
+            height: 25%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            .mark {
+              @include flexStyles(start, center);
+
+              .check{
+                color: $highlight;
+              }
+              p{
+                margin-left: 0.7rem;
+                text-transform: uppercase;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;300;500;600;800&display=swap");
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@import "node_modules/react-modal-video/scss/modal-video.scss";
+
+//Colors---------------------------------
+$background: #1b1b1b;
+$highlight: #e1765a;
+$hoverHighlight: #dc5635;
+$dimlight: #2c2c2c;
+$textPrimary: #ffffff;
+$textSecondary: #575758;
+$textTernary: #acacac;
+
+//Fonts----------------------------------
+$openSans: "Open Sans", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+
+//Same Code------------------------------
+@mixin basicStyle($height, $yPadding, $xPadding) {
+  width: 100vw;
+  height: $height;
+  padding: $yPadding $xPadding;
+}
+
+@mixin flexStyles($justifyContent, $alignItems) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin right-rings {
+  width: 5%;
+  height: 100%;
+  @include flexStyles(space-evenly, center);
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  .ring {
+    width: 100%;
+    height: 1.3rem;
+    background: $background;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+  }
+
+  @media only screen and (max-width: 575px) {
+    .ring {
+      height: 0.5rem;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@mixin left-rings($width) {
+  width: $width;
+  height: 100%;
+  @include flexStyles(space-evenly, center);
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  .ring {
+    width: 100%;
+    height: 1.3rem;
+    background: $background;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+  }
+  @media only screen and (max-width: 575px) {
+    .ring {
+      height: 0.5rem;
+    }
+  }
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.section-title {
+  @include flexStyles(space-between, center);
+
+  .heading {
+    width: 50%;
+    @include flexStyles(start, center);
+
+    h1 {
+      width: 75%;
+      font-size: 4rem;
+      font-family: $montserrat;
+      font-weight: 600;
+      color: $textPrimary;
+      span {
+        color: $highlight;
+      }
+    }
+
+    .line {
+      margin-left: 2rem;
+      width: 40%;
+      height: 3px;
+      background: $highlight;
+    }
+  }
+
+  p {
+    width: 40%;
+    color: $textTernary;
+    font-family: $openSans;
+  }
+
+  @media only screen and (max-width: 575px) {
+    flex-direction: column;
+
+    .heading {
+      width: 100%;
+      h1 {
+        width: 100%;
+        font-size: 2.3rem;
+        text-align: center;
+      }
+      .line {
+        display: none;
+      }
+    }
+    p {
+      width: 100% !important;
+      text-align: center;
+      font-weight: 300;
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 1020px) and (max-width: 1400px) {
+    h1{
+      font-size: 2.6rem !important;
+    }
+    p{
+      font-size: 1rem;
+    }
+  }
+}
+
+@mixin hoveredSec($fontSize, $icoSize, $buttonFont) {
+  width: 100%;
+  height: 100%;
+  background: #040404c7;
+  position: absolute;
+  border-radius: 1rem;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  @include flexStyles(center, center);
+  flex-direction: column;
+  padding: 2rem;
+
+  h1 {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: $fontSize;
+    font-family: $openSans;
+    font-weight: 200;
+    color: $highlight;
+    opacity: 0.2;
+  }
+
+  .ico {
+    font-size: $icoSize;
+    z-index: 1;
+    color: $textPrimary;
+  }
+
+  h2 {
+    font-family: $openSans;
+    color: $textPrimary;
+    z-index: 1;
+  }
+  small {
+    color: $textPrimary;
+  }
+
+  .singleProject {
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    @include flexStyles(center, center);
+    border-radius: 0.7rem;
+    background: $highlight;
+    text-decoration: none;
+    font-size: $buttonFont;
+    font-family: $montserrat;
+    color: $textPrimary;
+    transition: 0.3s ease-in;
+    z-index: 1;
+
+    &:hover {
+      background: $hoverHighlight;
+    }
+  }
+}
+
+//Main Code------------------------------
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  background-color: $background;
+}
+
+.video-popup {
+  .play {
+    font-size: 5rem;
+    padding: 0.5rem;
+    background: rgba(18, 18, 18, 0.354);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+
+    &:hover {
+      background: rgba(18, 18, 18, 0.509);
+      transform: scale(0.9);
+    }
+  }
+}
+.f-box {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  border-radius: 0.2rem;
+}
+
+.all-box {
+  background: #5771f8;
+}
+.intern-box {
+  background: #6bf85f;
+}
+.full-box {
+  background: #d63434;
+}
+.part-box {
+  background: #fff177;
+}
+
+//Pages Styles---------------------------
+@import "./pageStyles/home";
+@import "./pageStyles/about";
+@import "./pageStyles/services";
+@import "./pageStyles/projects";
+@import "./pageStyles/clientsays";
+@import "./pageStyles/career";
+@import "./pageStyles/aboutPage";
+@import "./pageStyles/projectPage";
+@import "./pageStyles/contact";
+@import "./pageStyles/servicesPage";
+
+//Components Styles----------------------
+@import "./componentStyles/navbar";
+@import "./componentStyles/footer";
+
+//---------------------------------------//
+@import "./responsive";

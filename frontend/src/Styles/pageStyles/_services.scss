@@ -1,0 +1,89 @@
+#services {
+  @include basicStyle(auto, 5rem, 10rem);
+
+  .service-section {
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+
+    .single-service {
+      width: 100%;
+      height: 20vh;
+      border-radius: 1.5rem;
+      background: $dimlight;
+      transform: translateY(20px);
+      margin: 1.3rem 0;
+
+      .titleBar {
+        border-radius: 1.5rem;
+        width: 100%;
+        height: 20vh;
+        @include flexStyles(space-between, center);
+        padding: 0 3rem;
+        cursor: pointer;
+        border-bottom: 1px solid $textSecondary;
+
+        div {
+          display: flex;
+          align-items: center;
+
+          .serviceIcon {
+            font-size: 4rem;
+            color: $textSecondary;
+            margin-right: 2rem;
+          }
+
+          h1 {
+            font-size: 3rem;
+            font-family: $montserrat;
+            color: $textSecondary;
+            font-weight: 400;
+          }
+        }
+
+        p {
+          width: 40%;
+          color: $textTernary;
+          font-family: $openSans;
+        }
+
+        .serviceArrow {
+          font-size: 2.5rem;
+          color: $textSecondary;
+        }
+      }
+
+      .pictureCase {
+        display: none;
+      }
+    }
+    .single-service.active {
+      height: auto;
+      .titleBar {
+        border: none;
+        div {
+          h1 {
+            color: $textPrimary;
+            font-weight: 600;
+          }
+        }
+        .serviceArrow {
+          color: $textPrimary;
+        }
+      }
+      .pictureCase {
+        transform: translateY(-100px);
+        opacity: 0;
+        padding: 0 3rem;
+        width: 100%;
+        height: 50vh;
+        @include flexStyles(space-between, center);
+        img {
+          width: 98%;
+          border-radius: 1rem;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

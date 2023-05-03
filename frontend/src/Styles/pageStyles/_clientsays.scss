@@ -1,0 +1,151 @@
+#client {
+  @include basicStyle(auto, 5rem, 10rem);
+
+  .testimonials {
+    width: 100%;
+    height: 90vh;
+    margin-top: 5rem;
+    @include flexStyles(space-between, center);
+
+    .leftColumn {
+      width: 59%;
+      height: 100%;
+      @include flexStyles(space-between, center);
+      flex-direction: column;
+
+      .testimonialSec {
+        width: 100%;
+        height: 49%;
+        background: $dimlight;
+        border-radius: 1.6rem;
+        padding: 5rem;
+        @include flexStyles(space-between, center);
+
+        .profilePic {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+            filter: grayscale(0.8);
+          }
+        }
+        .review-sec {
+          width: 75%;
+          height: auto;
+          font-family: $openSans;
+
+          p {
+            font-size: 1.3rem;
+            color: #828181;
+          }
+
+          div {
+            margin-top: 1rem;
+
+            p {
+              color: $highlight;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    .rightColumn {
+      width: 40%;
+      height: 100%;
+      @include flexStyles(space-between, center);
+      flex-direction: column;
+
+      .bigTestimonialSec {
+        width: 100%;
+        height: 75%;
+        background: $dimlight;
+        border-radius: 1.6rem;
+        @include flexStyles(space-evenly, center);
+        padding: 5rem 2rem;
+        flex-direction: column;
+
+        .profilePic {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+            filter: grayscale(0.8);
+          }
+        }
+        .review-sec {
+          width: 75%;
+          height: auto;
+          font-family: $openSans;
+          @include flexStyles(start, center);
+          flex-direction: column;
+          text-align: center;
+
+          p {
+            font-size: 1.3rem;
+            color: #828181;
+          }
+
+          div {
+            margin-top: 2rem;
+            width: 100%;
+            p {
+              text-align: center;
+              color: $highlight;
+              font-weight: 600;
+              display: flex;
+              justify-content: center;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      div {
+        width: 100%;
+        height: 23%;
+        @include flexStyles(space-between, center);
+
+        .subTestimonial {
+          width: 48.5%;
+          height: 100%;
+          background: $dimlight;
+          border-radius: 1.3rem;
+          @include flexStyles(center, center);
+          cursor: pointer;
+
+          .prev {
+            font-size: 5rem;
+            color: $textSecondary;
+            transition: 0.3s ease-in;
+          }
+          .next {
+            font-size: 5rem;
+            color: $highlight;
+            transition: 0.3s ease-in;
+          }
+
+          &:hover {
+            .prev,
+            .next {
+              color: $hoverHighlight;
+            }
+          }
+        }
+      }
+    }
+  }
+}

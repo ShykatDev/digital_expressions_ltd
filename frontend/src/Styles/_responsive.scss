@@ -1,0 +1,1337 @@
+@media only screen and (min-width: 1020px) and (max-width: 1400px) {
+  #navbar {
+    @include basicStyle(10vh, 0, 3rem);
+
+    .menu {
+      width: 50%;
+    }
+  }
+  #homepage {
+    @include basicStyle(auto, 5rem, 3rem);
+    .firstRow {
+      h1 {
+        font-size: 4.8rem !important;
+      }
+    }
+    .secondRow {
+      .establish {
+        h2 {
+          font-size: 1.3rem !important;
+        }
+      }
+      h1 {
+        font-size: 4.2rem !important;
+      }
+      .mainCTA {
+        width: 20% !important;
+        border-radius: 0.7rem !important;
+        height: 5rem !important;
+        .cta {
+          font-size: 1.2rem !important;
+          padding: 0 1.4rem !important;
+        }
+      }
+    }
+    .link-banner {
+      .links {
+        width: 24%;
+        height: auto;
+
+        .navlink {
+          button {
+            margin-bottom: 0.7rem !important;
+            border-radius: 0.6rem !important;
+          }
+        }
+      }
+
+      .banner {
+        width: 75%;
+        img {
+          border-radius: 1rem !important;
+        }
+      }
+    }
+  }
+
+  #about {
+    @include basicStyle(auto, 5rem, 3rem);
+
+    .about-details {
+      .details {
+        .aboutDetails {
+          .bottomRow {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  #services {
+    @include basicStyle(auto, 5rem, 3rem);
+
+    .service-section {
+      .single-service {
+        .titleBar {
+          div {
+            h1 {
+              font-size: 2.5rem;
+            }
+          }
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .single-service.active {
+        .pictureCase {
+          height: 40vh;
+        }
+      }
+    }
+  }
+
+  #projects {
+    @include basicStyle(auto, 5rem, 3rem);
+  }
+
+  #client {
+    @include basicStyle(auto, 5rem, 3rem);
+
+    .testimonials {
+      .leftColumn {
+        .testimonialSec {
+          padding: 2rem;
+
+          .review-sec {
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+      .rightColumn {
+        .bigTestimonialSec {
+          padding: 2rem;
+          .review-sec {
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #footer {
+    @include basicStyle(60vh, 5rem, 3rem);
+
+    .topItem {
+      h1 {
+        font-size: 4rem !important;
+      }
+    }
+    .bottomItem {
+      .mail {
+        .line {
+          width: 30% !important;
+        }
+      }
+    }
+  }
+
+  //aboutPage--------------------
+  .aboutPage-section {
+    margin-top: 10rem;
+    .section-intro {
+      height: auto;
+      padding: 5rem 3rem;
+
+      .info-sec {
+        width: 50%;
+        left: 3rem;
+
+        .section-title {
+          width: 70%;
+          h2 {
+            font-size: 3rem !important;
+          }
+        }
+      }
+    }
+
+    .aboutCont {
+      height: 120vh;
+      .about-content {
+        padding: 0 5rem;
+      }
+    }
+
+    .key-points {
+      padding: 0 3rem;
+
+      .bigKey {
+        h1 {
+          font-size: 7rem;
+        }
+        p {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    .feature-projects {
+      padding: 5rem 3rem;
+      height: auto;
+
+      .big-project {
+        .banner {
+          height: auto;
+          .details {
+            padding: 3rem 5rem;
+          }
+        }
+
+        .banner-group {
+          height: auto;
+
+          .small-banner {
+            .details {
+              padding: 3rem 3rem;
+            }
+          }
+        }
+      }
+    }
+
+    .vision {
+      padding: 5rem 3rem;
+
+      .vision-gal {
+        .card {
+          width: 18.5%;
+          padding: 2rem;
+          h2 {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .team {
+      padding: 5rem 3rem;
+    }
+  }
+
+  //servicesPage----------------
+  .services-page {
+    .first-sec {
+      padding: 5rem 3rem;
+    }
+    .banner-cont {
+      width: 32% !important;
+    }
+
+    .addons {
+      padding: 0 3rem;
+
+      .item {
+        padding: 1rem;
+      }
+    }
+
+    #allServices {
+      padding: 10rem 3rem;
+    }
+
+    .stats {
+      padding: 3rem 7rem;
+    }
+  }
+
+  //projectPage
+  .projectPage {
+    margin-top: 10rem;
+    .section-intro {
+      padding: 5rem 3rem;
+
+      .info-sec {
+        width: 70%;
+
+        .section-title {
+          width: 60%;
+          margin: 0 auto;
+          h2 {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
+
+    .project-map {
+      height: 65vh;
+      overflow-y: hidden !important;
+
+      .leftPage {
+        padding: 1rem 3rem;
+        overflow-y: hidden;
+
+        .demo {
+          .bottomBox {
+            .circle {
+              height: 5vh;
+            }
+          }
+        }
+      }
+      .middlePage {
+        padding: 1rem 3rem;
+        overflow-y: hidden;
+
+        .box {
+          margin-top: 1rem;
+        }
+      }
+
+      .rightPage {
+        padding: 1rem 3rem;
+        overflow-y: hidden;
+
+        .sec3 {
+          display: none;
+        }
+      }
+    }
+
+    .running-project {
+      padding: 5rem 3rem;
+    }
+
+    .featured-project {
+      padding: 5rem 3rem;
+
+      .featured {
+        .objectives {
+          padding: 5rem 5rem;
+        }
+      }
+    }
+
+    .all-projects {
+      padding: 5rem 3rem;
+    }
+  }
+
+  //contactPage-----------------------
+  .contactPage {
+    padding: 5rem 3rem;
+  }
+
+  //careerPage---------------
+  .career {
+    padding: 5rem 3rem;
+
+    .title-section {
+      height: auto;
+      .big-title {
+        h1 {
+          font-size: 4.5rem;
+        }
+      }
+      .intro-title {
+        width: 40%;
+        h2 {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .drop-cv {
+      h1 {
+        font-size: 3.8rem;
+        text-align: center;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 575px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  // Homepage-------------------------------------------
+
+  #navbar {
+    @include basicStyle(10vh, 0, 2rem);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .logoLink {
+      width: 40%;
+    }
+    .logo {
+      width: 100%;
+    }
+
+    .menu {
+      width: 100vw;
+      height: 100vh;
+      padding: 5rem 2rem 2rem 2rem;
+
+      ul {
+        height: 50%;
+        width: 100%;
+        align-items: center !important;
+
+        .link {
+          width: 52vw;
+          font-size: 2rem;
+
+          .navIco {
+            font-size: 2rem;
+          }
+        }
+      }
+      .social-links {
+        justify-content: center !important;
+
+        .s-io {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+
+  #homepage {
+    @include basicStyle(auto, 5rem, 2rem);
+
+    .firstRow {
+      flex-direction: column-reverse;
+      margin-top: 2rem;
+
+      h1 {
+        font-size: 3rem !important;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      p {
+        width: 100% !important;
+        text-align: center;
+      }
+    }
+
+    .secondRow {
+      flex-direction: column;
+
+      .establish {
+        width: 100% !important;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 3rem !important;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        text-align: center;
+      }
+
+      .mainCTA {
+        margin-top: 2rem;
+        width: 65% !important;
+        height: 4.5rem !important;
+        border-radius: 0.7rem !important;
+
+        .cta {
+          font-size: 1.2rem !important;
+        }
+      }
+    }
+
+    .link-banner {
+      flex-direction: column-reverse;
+      margin-top: 7rem;
+
+      .banner {
+        width: 100%;
+
+        img {
+          border-radius: 0.9rem !important;
+        }
+      }
+      .links {
+        width: 40% !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        height: auto;
+        button {
+          display: none;
+        }
+        .line {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #about {
+    @include basicStyle(auto, 5rem, 2rem);
+
+    .about-details {
+      flex-direction: column;
+
+      .videoBanner {
+        width: 100%;
+        height: 40vh;
+        border-radius: 0.9rem;
+      }
+      .details {
+        width: 100%;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  #services {
+    @include basicStyle(auto, 5rem, 2rem);
+
+    .service-section {
+      .single-service {
+        height: auto;
+        .titleBar {
+          flex-direction: column;
+          padding: 2rem 1rem;
+          height: auto;
+          div {
+            justify-content: center !important;
+            flex-direction: column;
+            .serviceIcon {
+              margin: 0;
+              margin-bottom: 1rem;
+            }
+            h1 {
+              font-size: 1.8rem;
+              text-align: center;
+            }
+          }
+          p {
+            width: 100%;
+            font-weight: 300;
+            font-size: 0.8rem;
+            text-align: center;
+            margin: 1rem;
+          }
+          .serviceArrow {
+            margin-top: 1rem;
+          }
+        }
+
+        .pictureCase {
+          height: auto !important;
+          flex-direction: column;
+          padding: 0 1rem !important;
+          img {
+            width: 100% !important;
+            height: 25vh;
+          }
+        }
+      }
+    }
+  }
+
+  #projects {
+    @include basicStyle(auto, 5rem, 2rem);
+
+    .projects-section {
+      height: auto;
+      flex-direction: column;
+
+      .leftCol {
+        width: 100%;
+        gap: 0.7rem;
+        .projectCont {
+          padding: 0.5rem;
+          border-radius: 0.7rem;
+        }
+      }
+      .rightCol {
+        width: 100%;
+        gap: 0.7rem;
+
+        .bigCont {
+          padding: 0.5rem;
+          border-radius: 0.7rem;
+        }
+
+        .smallCont {
+          .smallProjectCont {
+            padding: 0.5rem;
+            border-radius: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+
+  #client {
+    @include basicStyle(auto, 5rem, 2rem);
+
+    .testimonials {
+      height: auto;
+      flex-direction: column;
+
+      .leftColumn {
+        width: 100%;
+        height: auto;
+        gap: 1rem;
+
+        .testimonialSec {
+          flex-direction: column;
+          height: auto;
+          gap: 1rem;
+          padding: 3rem 2rem;
+
+          .review-sec {
+            width: 100%;
+
+            p {
+              font-weight: 300;
+              text-align: center;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+
+      .rightColumn {
+        width: 100%;
+        height: auto;
+        gap: 1rem;
+        flex-direction: column-reverse;
+        margin-top: 1rem;
+
+        .bigTestimonialSec {
+          padding: 3rem 2rem;
+          gap: 1rem;
+          height: auto;
+
+          .review-sec {
+            width: 100%;
+
+            p {
+              font-weight: 300;
+              text-align: center;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #footer {
+    @include basicStyle(60vh, 5rem, 2rem);
+
+    .footerGrid {
+      height: auto;
+      border-radius: 1rem;
+
+      .topItem {
+        padding: 2rem;
+        border-bottom-right-radius: 0;
+
+        h1 {
+          font-size: 3rem;
+          text-align: center;
+        }
+      }
+      .bottomItem {
+        height: auto;
+        .mail {
+          width: 100%;
+          padding: 2rem;
+          padding-bottom: 4rem;
+        }
+        .mail::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: $dimlight;
+          bottom: 0;
+          left: 0;
+          border-bottom-right-radius: 1;
+          border-bottom-left-radius: 1;
+        }
+      }
+
+      .footerCTA {
+        width: 80% !important;
+        top: 5rem;
+        button {
+          height: 80% !important;
+        }
+      }
+    }
+
+    .footer-nav{
+      width: 100%;
+      height: auto;
+      @include flexStyles(space-between, center);
+      flex-wrap: wrap;
+      margin-top: 8rem;
+      .footerNavLink{
+        font-size: 2rem;
+        padding: 0.3rem 0;
+        font-weight: 500;
+        color: $textSecondary;
+        font-family: $montserrat;
+        transition: 0.3s all ease;
+    
+        &:hover{
+          color: $textTernary;
+        }
+      }
+    }
+
+    .footerNav {
+      margin-top: 3rem;
+    }
+  }
+
+  //AboutPage----------------------------------------------
+
+  .aboutPage-section {
+    margin-top: 5vh;
+
+    .section-intro {
+      padding: 5rem 2rem;
+      height: auto;
+      flex-direction: column-reverse;
+
+      .info-sec {
+        width: 100%;
+        left: 50%;
+        top: 65%;
+        transform: translateX(-50%);
+        padding: 0 2rem;
+
+        h1 {
+          font-size: 3rem;
+          text-align: center;
+        }
+
+        .section-title {
+          width: 70%;
+          margin: 0 auto;
+          h2 {
+            font-size: 1.6rem;
+          }
+        }
+      }
+
+      .banner-sec {
+        width: 100%;
+        border-radius: 0.7rem;
+      }
+    }
+
+    .aboutCont {
+      margin-top: 15rem;
+      height: auto;
+
+      .bg-vid {
+        display: none;
+      }
+      .about-content {
+        padding: 0 2rem;
+
+        font-size: 1.2rem;
+      }
+    }
+
+    .key-points {
+      padding: 0 2rem;
+      margin-top: 50rem;
+      height: auto;
+      flex-direction: column;
+
+      .bigKey {
+        width: 100%;
+        height: 35vh;
+        h1 {
+          font-size: 7rem;
+        }
+        p {
+          font-size: 1.7rem;
+        }
+      }
+      .title-left--keys {
+        width: 100%;
+        margin-top: 3rem;
+
+        h1 {
+          font-size: 2rem;
+          text-align: center;
+        }
+        .keys-subTitle {
+          text-align: center;
+          margin-top: 1rem;
+        }
+        .small-keys {
+          flex-direction: column;
+          gap: 1rem;
+
+          .key {
+            width: 60%;
+          }
+        }
+      }
+    }
+
+    .feature-projects {
+      padding: 0rem 2rem;
+
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .keys-subTitle {
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      .big-project {
+        .banner {
+          height: auto;
+        }
+        .details {
+          padding: 2rem !important;
+
+          .title {
+            font-size: 1.8rem !important;
+          }
+        }
+      }
+      .banner-group {
+        margin-top: 3rem !important;
+        flex-direction: column;
+        gap: 3rem;
+        height: auto !important;
+
+        .small-banner {
+          width: 100% !important;
+          height: auto !important;
+
+          .details {
+            height: auto !important;
+          }
+        }
+      }
+    }
+
+    .vision {
+      padding: 0 2rem;
+      margin-top: 10rem;
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .keys-subTitle {
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      .vision-gal {
+        flex-direction: column;
+        gap: 1rem;
+        height: auto;
+
+        .card {
+          width: 100%;
+          h2 {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .team {
+      padding: 0 2rem;
+      margin-top: 10rem;
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .keys-subTitle {
+        text-align: center;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  //ServicesPage----------------------------------------------
+
+  .services-page {
+    .first-sec {
+      padding: 10rem 2rem 2rem 2rem;
+      height: auto;
+
+      .sec-title {
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      h1 {
+        font-size: 2.3rem;
+      }
+
+      .contents {
+        flex-direction: column;
+        height: auto;
+
+        .left-cont {
+          width: 100%;
+          text-align: center;
+          margin-top: 3rem;
+          @include flexStyles(center, center);
+        }
+        .banner-cont {
+          width: 100%;
+          height: 40vh;
+          margin: 2rem 0;
+        }
+        .right-cont {
+          width: 100%;
+          @include flexStyles(end, center);
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .addons {
+      height: auto;
+      padding: 5rem 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, auto);
+
+      .item {
+        padding: 2rem 1rem;
+
+        .ico {
+          font-size: 1.2rem;
+        }
+        p {
+          font-size: 0.8rem;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+
+    #allServices {
+      padding: 5rem 2rem;
+
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      p {
+        font-size: 0.7rem;
+        text-align: center;
+      }
+
+      .service {
+        height: auto;
+        flex-direction: column-reverse;
+        gap: 1rem;
+
+        .banners {
+          width: 100%;
+          flex-direction: column;
+          @include flexStyles(flex-end, start);
+
+          img {
+            width: 85%;
+            height: 20vh;
+            border-radius: 0.7rem;
+          }
+          img:nth-child(1) {
+            margin-right: 3rem;
+          }
+          img:nth-child(2) {
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+            margin-left: 3rem;
+          }
+        }
+
+        .details {
+          width: 100%;
+          @include flexStyles(center, center);
+
+          h1 {
+            font-size: 1.8rem;
+          }
+          .img-clients {
+            @include flexStyles(center, center);
+            margin-top: 0.5rem;
+            img {
+              width: 40%;
+            }
+          }
+        }
+      }
+
+      .even-services {
+        flex-direction: column;
+      }
+    }
+
+    .stats {
+      padding: 0 2rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        width: 100%;
+        font-size: 0.7rem;
+      }
+      .row {
+        flex-direction: column;
+        gap: 1rem;
+
+        .col1,
+        .col2,
+        .col3 {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  //ProjectsPage----------------------------------------------
+
+  .projectPage {
+    .section-intro {
+      height: auto;
+      padding: 3rem 2rem;
+
+      .info-sec {
+        width: 85%;
+        top: 50%;
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .section-title {
+          width: 65%;
+          margin: 0 auto;
+          h2 {
+            font-size: 1.3rem;
+          }
+        }
+      }
+      .banner-sec {
+        width: 100%;
+        border-radius: 0.7rem;
+        height: 30vh;
+        img {
+          height: 100%;
+        }
+      }
+    }
+
+    .project-map {
+      margin-top: 13rem;
+      height: 40vh;
+      margin-bottom: 0;
+
+      .leftPage {
+        padding: 1rem 1.2rem;
+
+        h2 {
+          font-size: 0.9rem;
+        }
+
+        .demo {
+          height: 60%;
+          .topBox {
+            .line1,
+            .line2 {
+              height: 2rem;
+            }
+          }
+          .bottomBox {
+            display: none;
+          }
+        }
+      }
+
+      .middlePage {
+        padding: 1rem;
+        .left-rings {
+          @include left-rings(9%);
+        }
+        h2 {
+          font-size: 0.9rem;
+        }
+        .box {
+          margin-top: 1rem;
+          height: 2rem;
+        }
+        .line1,
+        .line2,
+        .line3 {
+          height: 0.7rem;
+        }
+        .line1 {
+          margin-top: 0.7rem;
+        }
+      }
+      .rightPage {
+        padding: 1rem;
+        // overflow: hidden;
+
+        .left-rings {
+          @include left-rings(6%);
+        }
+
+        h2 {
+          font-size: 0.9rem;
+        }
+
+        .sec2,
+        .sec3 {
+          display: none;
+        }
+      }
+    }
+
+    .running-project {
+      padding: 5rem 2rem;
+
+      .onGoingProject {
+        padding: 3rem 1.5rem;
+
+        .first {
+          flex-direction: column-reverse;
+          @include flexStyles(space-between, start);
+
+          img {
+            width: 20%;
+            margin-bottom: 2rem;
+          }
+        }
+
+        .third {
+          flex-direction: column;
+          .keyPoint-img {
+            width: 100%;
+            margin-bottom: 2rem;
+          }
+          ul {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .featured-project {
+      padding: 3rem 1.5rem;
+
+      .featured {
+        .first {
+          flex-direction: column;
+          @include flexStyles(space-between, start);
+
+          img {
+            margin-top: 2rem;
+            width: 20%;
+          }
+        }
+
+        .objectives {
+          height: auto;
+          padding: 2rem 2rem 0 2rem;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+
+          .obj {
+            width: 100%;
+
+            h3 {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    .all-projects {
+      padding: 3rem 1.5rem;
+
+      .singleProjects {
+        .single-project {
+          height: auto;
+          flex-direction: column;
+          padding: 0 1rem;
+          border-bottom: 1px solid $textSecondary;
+          padding-bottom: 3rem;
+
+          .title {
+            top: 25%;
+            h1 {
+              font-size: 1.8rem;
+            }
+          }
+          .banner {
+            width: 100%;
+          }
+          .details {
+            width: 100%;
+            margin-top: 7rem;
+
+            .objectiveMark {
+              margin-top: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //ContactPage----------------------------------------------
+
+  .contactPage {
+    padding: 3rem 2rem;
+
+    .map{
+      width: 100%;
+      height: 60vh;
+      right: 0;
+      top: 0%;
+
+      img{
+        object-fit: cover;
+      }
+
+      &::after {
+        
+        background: linear-gradient(to bottom, #1b1b1b8a 30%, #1b1b1b);
+        
+      }
+  
+      &::before {
+        
+        background: linear-gradient(to top, #1b1b1b00 30%, #1b1b1b);
+        
+      }
+    }
+
+    .subtitle {
+      width: 100%;
+    }
+
+    .details {
+      height: auto;
+      flex-direction: column;
+
+      .email,
+      .phone,
+      .office,
+      .socials {
+        width: 100%;
+      }
+
+      .socials {
+        width: 60%;
+      }
+    }
+  }
+
+  //CareerPage----------------------------------------------
+
+  .career {
+    padding: 3rem 2rem;
+
+    .title-section {
+      height: auto;
+      flex-direction: column;
+
+      .big-title {
+        width: 100%;
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+      .intro-title {
+        width: 100%;
+        margin-top: 1.5rem;
+
+        h2 {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .jobs-section {
+      flex-direction: column;
+      .filter-jobs {
+        position: relative;
+        width: 100%;
+        top: 0;
+      }
+      .open-jobs {
+        margin-top: 3rem;
+        width: 100%;
+
+        .jobs {
+          .singleJob {
+            .cols {
+              flex-direction: column;
+              gap: 1.5rem;
+
+              .left-col {
+                width: 100%;
+                font-size: 0.8rem;
+              }
+              .right-col {
+                width: 100%;
+                border-top: 1px solid $textSecondary;
+                padding-top: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .drop-cv {
+      h1 {
+        font-size: 2.6rem;
+        text-align: center;
+      }
+      p {
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      button {
+        width: 12rem;
+        height: 4.3rem;
+        border-radius: 0.7rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}

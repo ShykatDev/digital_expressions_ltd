@@ -1,0 +1,23 @@
+export { default as logo } from "./dexp.png";
+export { default as leaser } from "./leaser.png";
+export { default as others } from "./others.png";
+export { default as homeBanner } from "./homeBanner.png";
+export { default as project1 } from "./project1.png";
+export { default as project2 } from "./project2.png";
+export { default as project3 } from "./project3.png";
+export { default as project4 } from "./project4.png";
+export { default as smoke } from "./smoke.mp4";
+export { default as samurai } from "./samurai.jpg";
+export { default as ific } from "./ific.png";
+export { default as obj1 } from "./obj1.png";
+export { default as obj2 } from "./obj2.png";
+export { default as obj3 } from "./obj3.png";
+export { default as obj4 } from "./obj4.png";
+export { default as obj5 } from "./obj5.png";
+export { default as services } from "./services.jpg";
+export { default as grad1 } from "./grad1.jpg";
+export { default as grad2 } from "./grad2.jpg";
+export { default as grad3 } from "./grad3.jpg";
+export { default as map } from "./map-01.png";
+
+export { default as team1 } from "./team1.png";

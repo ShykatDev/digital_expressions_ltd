@@ -1,0 +1,508 @@
+.aboutPage-section {
+  margin-top: 10vh;
+  width: 100%;
+  height: auto;
+
+  .section-intro {
+    padding: 5rem 10rem;
+    width: 100%;
+    height: 65vh;
+    @include flexStyles(flex-end, center);
+    position: relative;
+
+    .info-sec {
+      width: 30%;
+      height: auto;
+      position: absolute;
+      left: 10rem;
+      z-index: 1;
+
+      h1 {
+        font-size: 5.2rem;
+        color: $textPrimary;
+        font-family: $montserrat;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        span {
+          border-bottom: 1px solid $textPrimary;
+        }
+        opacity: 0;
+      }
+
+      p {
+        font-family: $openSans;
+        color: $textTernary;
+        font-weight: 300;
+        margin-bottom: 3rem;
+        opacity: 0;
+      }
+
+      .section-title {
+        width: 100%;
+        height: auto;
+        background: $highlight;
+        text-align: center;
+        @include flexStyles(center, center);
+        border-radius: 0.6rem;
+        opacity: 0;
+
+        h2 {
+          font-size: 3.5rem;
+          padding: 1rem 0;
+          font-family: $montserrat;
+          font-weight: 600;
+          @include flexStyles(space-between, center);
+
+          .ico {
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+    .banner-sec {
+      width: 70%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 1rem;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#1b1b1b56, #1b1b1b 89%);
+      }
+    }
+  }
+
+  .aboutCont {
+    width: 100%;
+    margin-top: 10rem;
+    position: relative;
+
+    .bg-vid {
+      width: 100%;
+      padding: 0;
+      opacity: 0.2;
+    }
+
+    .about-content {
+      width: 100%;
+      height: auto;
+      color: #ccc;
+      font-family: $openSans;
+      font-weight: 300;
+      margin: 5rem 0;
+      font-size: 2.6rem;
+      padding: 0 20rem;
+      position: absolute;
+      top: 10%;
+
+      span {
+        font-weight: 400;
+        color: $highlight;
+        border-bottom: 1px solid $highlight;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(#1b1b1b00, #1b1b1b 99%);
+    }
+  }
+
+  .key-points {
+    padding: 0rem 10rem;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 10rem;
+    @include flexStyles(space-between, flex-end);
+
+    .bigKey {
+      width: 28%;
+      height: 40vh;
+      background: $highlight;
+      border-radius: 0.7rem;
+      opacity: 0;
+
+      h1 {
+        font-size: 10rem;
+        font-family: $montserrat;
+        font-weight: 700;
+        padding: 1.5rem 5rem 0 0;
+        text-align: right;
+      }
+      p {
+        font-size: 2.2rem;
+        padding: 0rem 5rem;
+        text-align: right;
+        font-family: $openSans;
+      }
+    }
+
+    .title-left--keys {
+      width: 68%;
+      height: auto;
+
+      h1 {
+        font-size: 4rem;
+        font-family: $montserrat;
+        font-weight: 600;
+        text-align: end;
+        color: $highlight;
+        opacity: 0;
+      }
+      .keys-subTitle {
+        text-align: end;
+        color: $textTernary;
+        margin-bottom: 3rem;
+        font-family: $openSans;
+        font-weight: 300;
+        opacity: 0;
+      }
+
+      .small-keys {
+        @include flexStyles(space-between, center);
+
+        .key {
+          background: $dimlight;
+          height: 25vh;
+          width: 30%;
+          border-radius: 0.5rem;
+          @include flexStyles(center, center);
+          flex-direction: column;
+          opacity: 0;
+
+          h5 {
+            color: $textPrimary;
+            font-size: 2rem;
+            font-family: $montserrat;
+            margin-bottom: 0.5rem;
+          }
+          p {
+            color: $textTernary;
+            font-family: $openSans;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+
+  .feature-projects {
+    padding: 5rem 10rem;
+    height: auto;
+
+    h1 {
+      font-size: 4rem;
+      font-family: $montserrat;
+      font-weight: 600;
+      color: $highlight;
+      opacity: 0;
+    }
+    .keys-subTitle {
+      color: $textTernary;
+      margin-bottom: 3rem;
+      font-family: $openSans;
+      font-weight: 300;
+      opacity: 0;
+    }
+
+    .big-project {
+      width: 100%;
+      height: auto;
+
+      .banner {
+        width: 100%;
+        height: 80vh;
+        border-radius: 1rem;
+        overflow: hidden;
+        background: $dimlight;
+        margin-top: 5rem;
+        opacity: 0;
+
+        img {
+          width: 100%;
+          height: 65%;
+          object-fit: cover;
+        }
+
+        .details {
+          width: 100%;
+          height: 35%;
+          padding: 0rem 8rem;
+          @include flexStyles(center, flex-start);
+          flex-direction: column;
+
+          .title {
+            font-size: 2.4rem;
+            font-family: $openSans;
+            color: $textPrimary;
+            font-weight: 300;
+          }
+          .subtitle {
+            font-family: $openSans;
+            font-weight: 300;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            color: $textTernary;
+          }
+
+          button {
+            font-size: 1rem;
+            background: none;
+            @include flexStyles(center, center);
+            color: $highlight;
+            transition: 0.3s ease-in;
+
+            .arrow {
+              margin-left: 0.7rem;
+              transition: 0.3s ease-in;
+            }
+
+            &:hover {
+              color: $hoverHighlight;
+
+              .arrow {
+                margin-left: 1rem;
+              }
+            }
+          }
+        }
+      }
+
+      .banner-group {
+        margin-top: 6rem;
+        width: 100%;
+        height: 80vh;
+        @include flexStyles(space-between, center);
+
+        .small-banner {
+          width: 47%;
+          height: 100%;
+          border-radius: 0.7rem;
+          overflow: hidden;
+          background: $dimlight;
+          opacity: 0;
+
+          img {
+            width: 100%;
+            height: 60%;
+            object-fit: cover;
+          }
+
+          .details {
+            width: 100%;
+            height: 40%;
+            padding: 0rem 5rem;
+            @include flexStyles(center, flex-start);
+            flex-direction: column;
+
+            .title {
+              font-size: 1.7rem;
+              font-family: $openSans;
+              color: $textPrimary;
+              font-weight: 300;
+            }
+            .subtitle {
+              font-family: $openSans;
+              font-weight: 300;
+              margin-top: 1rem;
+              margin-bottom: 2rem;
+              font-size: 0.8rem;
+              color: $textTernary;
+            }
+
+            button {
+              font-size: 1rem;
+              background: none;
+              @include flexStyles(center, center);
+              color: $highlight;
+              transition: 0.3s ease-in;
+
+              .arrow {
+                margin-left: 0.7rem;
+                transition: 0.3s ease-in;
+              }
+
+              &:hover {
+                color: $hoverHighlight;
+
+                .arrow {
+                  margin-left: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .vision {
+    padding: 5rem 10rem;
+    width: 100%;
+    height: auto;
+
+    h1 {
+      font-size: 4rem;
+      font-family: $montserrat;
+      font-weight: 600;
+      color: $highlight;
+      text-align: end;
+      opacity: 0;
+    }
+    .keys-subTitle {
+      color: $textTernary;
+      margin-bottom: 3rem;
+      font-family: $openSans;
+      font-weight: 300;
+      text-align: end;
+      opacity: 0;
+    }
+
+    .vision-gal {
+      margin-top: 5rem;
+      width: 100%;
+      height: 45vh;
+      @include flexStyles(space-between, center);
+      gap: 0 1rem;
+
+      .card {
+        width: 30%;
+        height: 100%;
+        object-fit: cover;
+        padding: 3rem 3rem;
+        border-radius: 0.5rem;
+
+        h2 {
+          font-size: 1.8rem;
+          font-family: $openSans;
+          font-weight: 400;
+          color: $textPrimary;
+        }
+      }
+
+      .card:first-child {
+        background: url("../../Assets/card1.png");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .card:nth-child(2) {
+        background: url("../../Assets/card2.png");
+        background-size: cover;
+        background-position: center;
+
+        h2 {
+          color: $background;
+        }
+      }
+      .card:nth-child(3) {
+        background: url("../../Assets/card3.png");
+        background-size: cover;
+        background-position: center;
+      }
+      .card:nth-child(4) {
+        background: url("../../Assets/card4.png");
+        background-size: cover;
+        background-position: center;
+      }
+      .card:last-child {
+        background: url("../../Assets/card5.png");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+
+  .team {
+    width: 100%;
+    height: auto;
+    padding: 5rem 10rem;
+
+    h1 {
+      font-size: 4rem;
+      font-family: $montserrat;
+      font-weight: 600;
+      color: $highlight;
+      opacity: 0;
+    }
+    .keys-subTitle {
+      color: $textTernary;
+      margin-bottom: 3rem;
+      font-family: $openSans;
+      font-weight: 300;
+      opacity: 0;
+    }
+
+    .teamCard {
+      height: 50vh;
+      margin-top: 5rem;
+
+      .tc1,
+      .tc2,
+      .tc3,
+      .tc4,
+      .tc5,
+      .tc6 {
+        border-radius: 0.8rem;
+        overflow: hidden;
+        position: relative;
+        width: 80%;
+        height: 80%;
+        background: $dimlight;
+        margin: 0 auto;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(#00000000, $background 99%);
+          border-radius: 0rem;
+          overflow: hidden;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          filter: grayscale(0.6);
+        }
+
+        .info {
+          position: absolute;
+          left: 2rem;
+          bottom: 2rem;
+          z-index: 2;
+          h4 {
+            color: $highlight;
+            font-family: $openSans;
+            font-weight: 600;
+          }
+          p {
+            color: $textTernary;
+            font-family: $openSans;
+          }
+        }
+      }
+    }
+  }
+}

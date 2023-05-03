@@ -1,0 +1,335 @@
+.services-page {
+  width: 100%;
+  height: auto;
+  margin-top: 10vh;
+
+  .first-sec {
+    width: 100%;
+    height: 90vh;
+    padding: 5rem 10rem;
+    @include flexStyles(space-between, center);
+    flex-direction: column;
+    position: relative;
+
+    .sec-title {
+      position: absolute;
+      right: 20%;
+      top: 30%;
+      width: 8rem;
+      height: 8rem;
+      @include flexStyles(center, center);
+      border-radius: 50%;
+      border: 1px solid $highlight;
+      opacity: 0;
+
+      h1 {
+        font-size: 0.9rem;
+      }
+    }
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 3.4rem;
+      color: $textPrimary;
+      font-family: $montserrat;
+      font-weight: 600;
+    }
+
+    .contents {
+      width: 100%;
+      height: 80%;
+      @include flexStyles(space-between, center);
+
+      .left-cont {
+        width: 30%;
+        height: 60%;
+
+        @include flexStyles(center, start);
+        flex-direction: column;
+
+        p {
+          font-family: $openSans;
+          color: $textTernary;
+          font-weight: 300;
+          opacity: 0;
+        }
+
+        button {
+          margin-top: 3rem;
+          padding: 1rem 2.4rem;
+          border-radius: 0.3rem;
+          transition: 0.3s ease;
+          opacity: 0;
+
+          &:hover {
+            color: $textPrimary;
+            background: $textSecondary;
+          }
+        }
+      }
+      .banner-cont {
+        width: 25%;
+        height: 100%;
+        padding: 1rem;
+
+        border-radius: 1rem;
+
+        img {
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 1rem;
+          object-fit: cover;
+        }
+      }
+      .right-cont {
+        width: 30%;
+        height: 60%;
+        @include flexStyles(end, flex-start);
+        flex-direction: column;
+        opacity: 0;
+
+        div {
+          @include flexStyles(start, center);
+
+          .cir {
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background: $highlight;
+          }
+          h5 {
+            font-size: 0.9rem;
+            font-weight: 400;
+            font-family: $openSans;
+            color: $textPrimary;
+            margin-left: 0.5rem;
+          }
+        }
+
+        p {
+          margin-top: 1rem;
+          font-family: $openSans;
+          color: $textTernary;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .addons {
+    width: 100%;
+    height: 48vh;
+    padding: 0 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    gap: 0.7rem;
+    font-family: $openSans;
+    margin-top: 3rem;
+
+    .item:nth-child(1) {
+      background: $textPrimary;
+      border-radius: 0.3rem;
+      grid-column: 1/3;
+
+      h2 {
+        font-size: 2rem;
+        color: $background;
+      }
+      p {
+        margin-top: 0.4rem;
+        font-size: 1.1rem;
+        color: $textSecondary;
+      }
+    }
+
+    .item {
+      background: $dimlight;
+      border-radius: 0.3rem;
+      padding: 1.5rem 2rem;
+      transition: 0.3s ease;
+      opacity: 0;
+
+      .ico {
+        color: $highlight;
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $textPrimary;
+        margin-bottom: 0.3rem;
+        margin-top: 0.4rem;
+        transition: 0.3s ease;
+      }
+      p {
+        font-size: 0.9rem;
+        color: $textTernary;
+        font-weight: 300;
+      }
+
+      &:hover {
+        background: $textPrimary;
+
+        h2 {
+          color: $background;
+        }
+      }
+    }
+  }
+
+  #allServices {
+    width: 100%;
+    height: auto;
+    padding: 10rem 10rem;
+
+    h1 {
+      font-size: 3rem;
+      font-family: $openSans;
+      font-weight: 600;
+      color: $textPrimary;
+    }
+    p {
+      font-size: 1rem;
+      font-family: $openSans;
+      font-weight: 300;
+      color: $textTernary;
+    }
+
+    .service {
+      width: 100%;
+      height: 70vh;
+      margin: 3rem 0;
+      @include flexStyles(space-between, center);
+
+      .details {
+        width: 50%;
+        height: 100%;
+        @include flexStyles(center, start);
+        flex-direction: column;
+
+        h1 {
+          font-size: 2.3rem;
+          color: $highlight;
+          margin-bottom: 1rem;
+        }
+        p {
+          margin-bottom: 3rem;
+        }
+        small {
+          color: $textPrimary;
+          border-radius: 0.5rem;
+          padding: 0.5rem 2rem;
+          border: 1px solid $textPrimary;
+          margin-bottom: 1rem;
+        }
+
+        .img-clients {
+          width: 100%;
+          height: auto;
+          img {
+            width: 30%;
+            margin-right: 1rem;
+          }
+        }
+      }
+
+      .banners {
+        width: 40%;
+        height: 100%;
+        @include flexStyles(flex-end, center);
+
+        img {
+          width: 40%;
+          height: 90%;
+          object-fit: cover;
+          border-radius: 1rem;
+          opacity: 0;
+        }
+        img:nth-child(1) {
+          margin-right: 1rem;
+          margin-top: 3rem;
+        }
+        img:nth-child(2) {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+  .stats {
+    width: 100%;
+    height: auto;
+    padding: 3rem 15rem;
+
+    h2 {
+      text-align: center;
+      font-size: 2.6rem;
+      font-family: $openSans;
+      font-weight: 600;
+      color: $textPrimary;
+      margin-bottom: 1rem;
+    }
+    p {
+      width: 40%;
+      margin: 0 auto;
+      font-size: 1rem;
+      text-align: center;
+      font-family: $openSans;
+      font-weight: 300;
+      color: $textTernary;
+    }
+
+    .row {
+      width: 100%;
+      @include flexStyles(space-between, center);
+      margin-top: 3rem;
+
+      .col1 {
+        width: 26%;
+        height: 15vh;
+        @include flexStyles(flex-start, center);
+        background: white;
+        border-radius: 0.4rem;
+        padding: 0 2rem;
+        opacity: 0;
+        h3 {
+          font-family: $openSans;
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+      }
+      .col2 {
+        width: 45%;
+        height: 15vh;
+        @include flexStyles(flex-start, center);
+        background: url("../../Assets/grad3.jpg");
+        background-position: center;
+        border-radius: 0.4rem;
+        padding: 0 2rem;
+        opacity: 0;
+        h3 {
+          font-family: $openSans;
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+      }
+      .col3 {
+        width: 26%;
+        height: 15vh;
+        @include flexStyles(flex-start, center);
+        background: white;
+        border-radius: 0.4rem;
+        padding: 0 2rem;
+        opacity: 0;
+        h3 {
+          font-family: $openSans;
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

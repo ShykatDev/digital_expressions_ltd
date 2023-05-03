@@ -1,0 +1,129 @@
+#navbar {
+  @include basicStyle(10vh, 0, 10rem);
+  background: transparent;
+  backdrop-filter: blur(5px);
+  @include flexStyles(space-between, center);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .logoLink {
+    width: 20%;
+    height: auto;
+  }
+
+  .logo {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .menu-toggler {
+    color: $textPrimary;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $highlight;
+    }
+  }
+
+  .menu-toggler.close {
+    color: $dimlight;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $highlight;
+    }
+  }
+
+  .menu {
+    width: 30vw;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    transform: translateX(300px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    padding: 5rem 10rem 5rem 3rem;
+    overflow: hidden;
+
+    ul {
+      width: 100%;
+      height: 75%;
+      @include flexStyles(space-between, flex-end);
+      flex-direction: column;
+
+      .link {
+        font-size: 3rem;
+        @include flexStyles(center, center);
+        text-decoration: none;
+        color: $dimlight;
+        text-align: right;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s;
+        font-family: $openSans;
+        font-weight: 500;
+        @include flexStyles(space-between, center);
+        opacity: 0;
+
+        .navIco {
+          font-size: 2.7rem;
+          margin-right: 1.5rem;
+        }
+
+        &:hover {
+          color: $highlight;
+        }
+      }
+
+      .link.active {
+        color: $highlight;
+      }
+
+      .link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.2rem;
+        overflow: hidden;
+        transform: translateX(102%);
+        transition: 0.3s ease;
+        background: $highlight;
+      }
+
+      .link:hover::after {
+        transform: translateX(0%);
+      }
+    }
+
+    .social-links {
+      width: 100%;
+      height: auto;
+      margin-top: 5rem;
+      padding-top: 5rem;
+      border-top: 1px solid $hoverHighlight;
+      @include flexStyles(flex-end, center);
+
+      .s-io {
+        font-size: 2.3rem;
+        margin-left: 1.6rem;
+        color: $dimlight;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.3s ease;
+        opacity: 0;
+
+        &:hover {
+          color: $highlight;
+        }
+      }
+    }
+  }
+}
